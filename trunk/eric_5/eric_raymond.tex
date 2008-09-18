@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[top=2cm,bottom=1.5cm,left=2cm,right=2cm,includefoot]{geometry}
+%\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage[cm-default]{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+%\usepackage{zhspacing}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\setromanfont{方正书宋简体}
+%\setromanfont{方正楷体简体}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+\title{Eric S. Raymond 五部曲}
+\author{作者：Eric S. Raymond\\
+翻译：不详\\
+来源：灰狐\\
+整理：MDZ (mdztiger@gmail.com)}
+%\date{2008.9.16}
+\begin{document}
+\maketitle
+\newpage
+
+\include{declaration}
+
+\newpage
+\tableofcontents
+\newpage
+%\renewcommand{\baselinestretch}{2}  % 设置行倍数间距
+\setlength{\baselineskip}{13pt} % 设置行间距
+% \setlength{\parskip}{\baselineskip} % 断落间距
+\renewcommand{\arraystretch}{1.5}
+
+\include{esr_1}
+\newpage
+
+\include{esr_2}
+\newpage
+
+\include{esr_3}
+\newpage
+
+\include{esr_4}
+\newpage
+
+\include{esr_5}
+
+\end{document}
