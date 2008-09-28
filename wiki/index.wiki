@@ -1,3 +1,4 @@
+#labels 简介,FAQ
 #This is the index page of this wiki.
 
 = 简介 =
