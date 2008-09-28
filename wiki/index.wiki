@@ -1,4 +1,4 @@
-#这是 wiki 首页，请点击这里进来！
+# This is the index page of this wiki.
 
 = 简介 =
 
