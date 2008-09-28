@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#这是 wiki 首页，请点击这里进来！
 
 = 简介 =
 
