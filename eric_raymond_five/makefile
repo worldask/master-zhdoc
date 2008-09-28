@@ -16,6 +16,6 @@ eric_raymond.pdf:eric_raymond.tex $(INCLUDES)
 #       xpdf eric_raymond.pdf -z width -g 1200x800 ${PAGE}
 
 clean:
-	rm -f *.log *.aux *.toc *.out
+	rm -f *.log *.aux *.toc *.out *~
 purge: clean
 	rm -f eric_raymond.pdf
