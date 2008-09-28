@@ -1,4 +1,4 @@
-# This is the index page of this wiki.
+#This is the index page of this wiki.
 
 = 简介 =
 
