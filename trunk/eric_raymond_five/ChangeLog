@@ -1,0 +1,5 @@
+2008-09-29 MDZ (Mei Zhengzheng) <mdztiger@gmail.com>
+
+	Version 0.8.2
+	* REPLACE: replaced the abnormal dashs with right type.
+	* REMOVE: removed the error of command "svn diff".
