@@ -4,10 +4,14 @@ INCLUDES = declaration.tex \
 	   esr_3.tex \
 	   esr_4.tex \
 	   esr_5.tex
+FILE_NAME = eric_raymond
+PDF_FILE = $(FILE_NAME).pdf
+TEX_FILE = $(FILE_NAME).tex
+TEX = xelatex
 
-all: eric_raymond.pdf
-eric_raymond.pdf:eric_raymond.tex $(INCLUDES)
-	xelatex eric_raymond.tex && xelatex eric_raymond.tex
+all: $(PDF_FILE)
+$(PDF_FILE):$(TEX_FILE) $(INCLUDES)
+	$(TEX) $(TEX_FILE) && $(TEX) $(TEX_FILE)
 
 # I don't think add xpdf section here is a good idea since not everyone has xpdf
 # or use it as the primary pdf viewer. So the PAGE var may be useless.
@@ -18,4 +22,4 @@ eric_raymond.pdf:eric_raymond.tex $(INCLUDES)
 clean:
 	rm -f *.log *.aux *.toc *.out *~
 purge: clean
-	rm -f eric_raymond.pdf
+	rm -f $(PDF_FILE)
