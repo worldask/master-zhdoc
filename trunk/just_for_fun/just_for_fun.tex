@@ -5,7 +5,7 @@
 \usepackage[cm-default]{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-%\usepackage{zhspacing}
+\usepackage{zhspacing}
 \usepackage{amsmath}
 \usepackage{indentfirst}
 \setromanfont{方正书宋简体}
@@ -19,11 +19,13 @@
 %来源：灰狐\\
 整理：MDZ (mdztiger@gmail.com)}
 %\date{2008.9.16}
+
+\zhspacing
 \begin{document}
 \maketitle
 \newpage
 
-\include{declaration}
+\include{include/declaration}
 
 \newpage
 \tableofcontents
@@ -33,18 +35,18 @@
 % \setlength{\parskip}{\baselineskip} % 断落间距
 \renewcommand{\arraystretch}{1.5}
 
-\include{jff_1}
+\include{include/jff_1}
 \newpage
 
-\include{jff_2}
+\include{include/jff_2}
 \newpage
 
-\include{jff_3}
+\include{include/jff_3}
 \newpage
 
-\include{jff_4}
+\include{include/jff_4}
 \newpage
 
-\include{jff_5}
+\include{include/jff_5}
 
 \end{document}

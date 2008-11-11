@@ -1,10 +1,10 @@
 PAGE := 1
-INCLUDES = declaration.tex \
-	   jff_1.tex \
-	   jff_2.tex \
-	   jff_3.tex \
-	   jff_4.tex \
-	   jff_5.tex
+INCLUDES = include/declaration.tex \
+	   include/jff_1.tex \
+	   include/jff_2.tex \
+	   include/jff_3.tex \
+	   include/jff_4.tex \
+	   include/jff_5.tex
 
 FILE_NAME = just_for_fun
 PDF_FILE = $(FILE_NAME).pdf
