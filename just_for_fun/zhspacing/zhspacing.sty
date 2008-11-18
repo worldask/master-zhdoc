@@ -84,11 +84,18 @@
 \fi
 \ifx\zhspacingrevision\@undefined
 \def\zhspacingrevision{2008/01/02}
-\input usefulmacros.sty
+
+% 有修改过的地方
+%\input usefulmacros.sty
+\input zhspacing/usefulmacros.sty
+
 \newif\ifzhs@ambiwide
 \zhs@ambiwidetrue
 \ifLaTeX@e
-  \ProvidesPackage{zhspacing}[\zhspacingrevision]
+
+% 有修改的地方
+% \ProvidesPackage{zhspacing}[\zhspacingrevision]
+  \ProvidesPackage{zhspacing/zhspacing}[\zhspacingrevision]
   \DeclareOption{ambiwide}{\zhs@ambiwidetrue}
   \DeclareOption{ambinarrow}{\zhs@ambiwidefalse}
   \ProcessOptions\relax
@@ -315,7 +322,11 @@
   \fi
 }
 % Character class settings.
-\input myclass.sty
+
+% 有修改的地方
+%\input myclass.sty
+\input zhspacing/myclass.sty
+
 % three base classes: boundary, halfwidth and fullwidth
 \newclass{boundary}
 \setclassnum{boundary}{255}
