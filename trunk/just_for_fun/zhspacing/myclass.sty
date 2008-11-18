@@ -10,7 +10,11 @@
 \catcode`\@=11
 \ifx\@myclass@defined\@undefined
 \def\@myclass@defined{\relax}
-\input usefulmacros.sty
+
+% 有修改的地方
+%\input usefulmacros.sty
+\input zhspacing/usefulmacros.sty
+
 \catcode`\@=11
 \def\@class@list{}
 \def\newclass{\@ifnextchar[{\@newclass@param}{\@newclass}}
