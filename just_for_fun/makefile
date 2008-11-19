@@ -1,10 +1,11 @@
 PAGE := 1
-INCLUDES = include/declaration.tex \
-	   include/jff_1.tex \
-	   include/jff_2.tex \
-	   include/jff_3.tex \
-	   include/jff_4.tex \
-	   include/jff_5.tex
+INC_PATH = include
+INCLUDES = $(INC_PATH)/declaration.tex \
+	   $(INC_PATH)/jff_1.tex \
+	   $(INC_PATH)/jff_2.tex \
+	   $(INC_PATH)/jff_3.tex \
+	   $(INC_PATH)/jff_4.tex \
+	   $(INC_PATH)/jff_5.tex
 
 FILE_NAME = just_for_fun
 PDF_FILE = $(FILE_NAME).pdf
@@ -20,6 +21,6 @@ xpdf: $(PDF_FILE)
 	xpdf $(PDF_FILE) -z width -g 1200x800 $(PAGE)
 
 clean:
-	rm -f *.log *.aux *.toc *.out *~
+	rm -f *.log $(INC_PATH)/*.aux *.aux *.toc *.out *~
 purge: clean
 	rm -f $(PDF_FILE)
